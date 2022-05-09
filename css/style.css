@@ -1,0 +1,42 @@
+:root {
+  --heading-font: "Inter", sans-serif;
+  --heading-font: "Inter", sans-serif; }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.p-none {
+  padding: 0 !important; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: #fff; }
+
+p {
+  color: #fff; }
+
+.homepage__header {
+  background-image: url("../../assets/brooklyn.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+  display: grid;
+  place-content: center;
+  text-align: center; }
