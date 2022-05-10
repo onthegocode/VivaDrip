@@ -31,7 +31,7 @@ p {
   color: #fff; }
 
 .homepage__header {
-  background-image: url("../../assets/brooklyn.jpg");
+  background-image: url("../assets/brooklyn.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
