@@ -1,0 +1,142 @@
+.productcard {
+	position: relative;
+	background-color: #bad5f0;
+	display: flex;
+	flex-direction: column;
+	max-width: 560px;
+	max-height: 650px;
+	justify-content: center;
+
+	@media only screen and (max-width: 480px) {
+		text-align: center;
+	}
+	&-header {
+		display: flex;
+		background-color: #85bbf0;
+		align-items: center;
+		justify-content: space-between;
+		@media only screen and (max-width: 480px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 1.2rem;
+		}
+		&--icon {
+			fill: rgba(255, 255, 255, 0.2);
+			width: 95px;
+			height: 95px;
+		}
+		&--text {
+			font-family: var(--heading-font) !important;
+			font-weight: 500 !important;
+			color: #fff;
+			font-size: 3rem;
+			text-transform: uppercase;
+			margin: 0;
+		}
+		&--copy {
+			font-family: var(--heading-font) !important;
+			font-weight: 400 !important;
+			font-size: 1.8rem;
+			color: rgba(255, 255, 255, 0.6) !important;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding-right: 1.5rem;
+			line-height: 1.2;
+			margin: 0;
+			@media only screen and (max-width: 480px) {
+				padding: 0;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	&-main {
+		padding: 6rem 3rem;
+		display: flex;
+		&--text {
+			font-family: var(--main-font);
+			color: #fff;
+			font-weight: 400;
+			font-size: 1.8rem;
+			width: 100%;
+			line-height: 1.2;
+			margin-bottom: 5rem;
+		}
+		&--list {
+			text-align: left;
+			margin-bottom: 4rem;
+			@media only screen and (max-width: 480px) {
+				list-style: none;
+				padding: 0;
+				text-align: center;
+			}
+			&::before {
+				content: attr(aria-label);
+				font-size: 2.2rem;
+				font-family: var(--main-font);
+				font-weight: 700;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #fff;
+				margin-left: -14px;
+				padding-bottom: 2rem;
+				@media only screen and (max-width: 480px) {
+					margin: 0;
+				}
+			}
+			& li {
+				font-family: var(--main-font);
+				font-weight: 500;
+				font-size: 1.8rem;
+				line-height: 1.7;
+				color: #fff;
+				&:first-child {
+					margin-top: 1rem;
+				}
+			}
+		}
+		&--price {
+			font-family: var(--main-font);
+			font-weight: 700;
+			font-size: 1.8rem;
+			color: #fff;
+			margin-top: 1.6rem;
+			margin-bottom: 4rem;
+			& span {
+				font-family: inherit;
+				font-size: 1.6rem;
+				font-weight: 600;
+				color: inherit;
+			}
+		}
+		&--image {
+			width: 65%;
+			@media only screen and (max-width: 560px) {
+				display: none;
+			}
+			&-img {
+				position: absolute;
+				top: 35%;
+				right: 1%;
+				width: 20rem;
+				height: 20rem;
+			}
+		}
+	}
+}
+
+.main__btn--outline {
+	background: none;
+	padding: 1.2rem 5rem;
+}
+.main-flex-column {
+	display: flex;
+	align-items: center;
+	@media only screen and (max-width: 480px) {
+		flex-direction: column;
+	}
+}
+.featured-product {
+	padding: 4rem;
+}
